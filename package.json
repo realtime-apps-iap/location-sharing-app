@@ -1,0 +1,16 @@
+{
+  "name": "location-sharing-app",
+  "version": "0.1.0",
+  "description": "Demo Location Sharing Application for SUTD IAP 2021 Introduction to Real Time Web Applications",
+  "main": "index.js",
+  "repository": "https://github.com/realtime-apps-iap/location-sharing-app",
+  "author": "lowen <lowenhere@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.17.1",
+    "niceware": "^2.0.1",
+    "validator": "^13.5.2",
+    "ws": "^7.4.2"
+  }
+}

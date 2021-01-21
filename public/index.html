@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Realtime Web Apps IAP | Location Sharing Application Demo</title>
+
+    <meta name="description" content="
+    Demo location sharing application for the Introduction to Realtime Web Apps Workshop for SUTD's Independent Activities Period (IAP) 2021.
+  ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <meta property="og:title" content="Realtime Web Apps IAP | Location Sharing Application Demo">
+    <meta property="og:image" content="assets/spaceman_map.jpg">
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Leaflet.js css and js files -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <link href="css/styles.css" rel="stylesheet">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <div id="map">
+        <div id="controls" class="card card-body d-flew flex-col align-items-center">
+            <h4>Create / Join a Room</h4>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">display name</span>
+                </div>
+                <input id="name-input" type="text" class="form-control"
+                    placeholder="your display name - shown to all users in the room">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">room ID</span>
+                </div>
+                <input id="room-input" type="text" class="form-control"
+                    placeholder="leave this empty if joining a room">
+            </div>
+            <div class="d-flex flex-row">
+                <button id="create-room-btn" type="button" class="btn btn-primary btn-lg mx-2">
+                    Create Room</button>
+                <button id="join-room-btn" type="button" class="btn btn-primary btn-lg mx-2">
+                    Join Room</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Okay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/utils.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

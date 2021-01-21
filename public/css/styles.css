@@ -1,0 +1,22 @@
+#map {
+    height: 100vh;
+}
+
+#controls {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 5vh;
+
+    max-width: 600px;
+    min-height: 10vh;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 600px) {
+    #controls {
+        width: 90vw;
+    }
+  }
