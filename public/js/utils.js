@@ -12,7 +12,7 @@ $(window).on('load', function () {
         <p>
             This is a simple demo application showcasing how to use the browser GeoLocation API, along with websockets for live location sharing.
             <br/> <br/>
-            Therefore, the locations permission to need to be enabled for the application to function.
+            Therefore, the locations permission needs to be enabled for the application to function.
             <br/> <br/>
             Your location will <b>not</b> be logged.
         </p>

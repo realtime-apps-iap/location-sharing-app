@@ -107,7 +107,7 @@ const messageHandler = function (e) {
     }
 
     if (msg.type == "USER_UPDATE_LOC") {
-        const user = myRoom.users.find(u => u.id == msg.user.id);
+        const user = myRoom.users.find(u => u.id == msg.user.id && u.id != myUser.id);
         if (!user) { return; }
 
         user.lat = msg.user.lat;
@@ -122,7 +122,7 @@ const messageHandler = function (e) {
         if (!user) { return; }
         map.removeLayer(user.marker);
         myRoom.users = myRoom.users.filter(u => u.id == user.id);
-        updateControls(myRoom.id, myRoom.user.length);
+        updateControls(myRoom.id, myRoom.users.length);
     }
 
 };
